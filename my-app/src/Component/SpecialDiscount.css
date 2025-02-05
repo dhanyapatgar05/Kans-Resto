@@ -3,7 +3,7 @@
   background-color: #f8f8f8;
   border-radius: 10px;
   text-align: center;
-  width: 1000px;
+  width: 900px;
 }
 
 .top-section {
@@ -66,8 +66,8 @@
   background: #f9f9f9;
   padding: 10px;
   border-radius: 10px;
-  width: 250px;
-  height: 310px;
+  width: 200px;
+  height: 250px;
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -104,47 +104,49 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 .price-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%; 
-}
-
-.discount {
-  color: red;
-  font-weight: bold;
-  font-size: 14px;
-  
-  
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .price-details {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0px;
+  justify-content: space-between; 
+  width: 50%;
+}
+
+.discount {
+  background-color: #FDEAEA;
+  color: #e85869;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .original-price {
   text-decoration: line-through;
   color: gray;
   font-size: 12px;
-}
-
-.discounted-price {
-  font-size: 16px;
-  font-weight: bold;
- 
+  flex-grow: 3; /* Allows spacing between original price and order button */
 }
 
 .order-button {
   background: black;
   color: white;
-  padding: 8px 12px;
+  padding: 6px 20px;
+  align-self: flex-end;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
-  
+  font-size: 12px;
+}
+
+.discounted-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-top: 5px;
 }

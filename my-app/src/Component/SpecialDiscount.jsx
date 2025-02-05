@@ -31,13 +31,14 @@ const SpecialDiscount = () => {
             </div>
             <h3 className="item-name">{item.name}</h3>
             <div className="price-container">
-              <span className="discount">{item.discount}</span>
-              <div className="price-details">
-                <p className="original-price">{item.originalPrice}</p>
-                <p className="discounted-price">{item.price}</p>
+              <div className="top-row">
+                <span className="discount">15%</span>
+                <span className="original-price">{item.originalPrice}</span>
               </div>
               <button className="order-button">Order</button>
+              <p className="discounted-price">{item.price}</p>
             </div>
+
           </div>
         ))}
       </div>
